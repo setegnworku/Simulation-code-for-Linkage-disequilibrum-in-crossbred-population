@@ -1,1 +1,2 @@
-## Simulation-code-for-Linkage-disequilibrum-in-crossbred-population
+### This repository contains script to simulate Linkage disequilibrum for crossbred population.
+
