@@ -37,8 +37,8 @@ pDvals<- rep( seq(0.05,0.95,0.10),10)
 
 datpar<- data.frame(pAvals,pBvals,pCvals,pDvals,rab,rcd)
 
-datfilter =datpar%>% filter (pAvals<=pCvals )
 
+datfilter=datpar[datpar$pAvals<=datpar$pCvals, ]
 nrep<- rep(2,nrow(datfilter))
 NAB<- NCD<- rep( N_alt,nrow(datfilter))
 datwithrep<- cbind(nrep,NAB,NCD,datfilter)
